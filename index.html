@@ -11,7 +11,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around; /* Adjusted for better spacing */
             height: 100vh;
             margin: 0;
             overflow: hidden;
@@ -25,45 +25,43 @@
             src: url('fonts/2.ttf') format('truetype');
         }
         h1 {
-            position: absolute;
-            top: 5%;
-            letter-spacing: 0.5vw; /* Adjusted for responsiveness */
-            font-size: 3vw; /* Adjusted for responsiveness */
+            margin-top: 5vh;
+            letter-spacing: 0.5vw;
+            font-size: 3vw;
         }
         p {
-            position: absolute;
-            top: 15%;
-            font-size: 2vw; /* Adjusted for responsiveness */
-            letter-spacing: 0.2vw; /* Adjusted for responsiveness */
+            margin-top: 5vh;
+            font-size: 2vw;
+            letter-spacing: 0.2vw;
         }
         .countdown {
-            position: flex;
-            top: 25%;
-            font-size: 2vw; /* Adjusted for responsiveness */
-            letter-spacing: 0.2vw; /* Adjusted for responsiveness */
+            font-size: 2vw;
+            letter-spacing: 0.2vw;
             color: #ff0000;
         }
         .gif-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 40%; /* Adjusted for responsiveness */
+            height: 50vh;
+            width: 100vw; /* Maintain aspect ratio */
         }
         .gif-container img {
-            max-width: 80%; /* Adjusted for responsiveness */
+            max-width: 100%;
+            max-height: 100%;
             height: auto;
+            width: auto;
         }
         .footer {
-            position: absolute;
-            justify-content: center;
-            bottom: 5%; /* Adjusted for responsiveness */
             display: flex;
-            gap: 2vw; /* Adjusted for responsiveness */
+            justify-content: center;
+            gap: 2vw;
+            margin-bottom: 5vh;
         }
         .footer a {
             color: black;
             text-decoration: none;
-            font-size: 2vw; /* Adjusted for responsiveness */
+            font-size: 2vw;
         }
         /* Media Queries for smaller screens */
         @media (max-width: 768px) {
@@ -71,10 +69,10 @@
                 font-size: 5vw;
             }
             p {
-                font-size: 3vw;
+                font-size: 4vw;
             }
             .countdown {
-                font-size: 3vw;
+                font-size: 4vw;
             }
             .footer a {
                 font-size: 4vw;
